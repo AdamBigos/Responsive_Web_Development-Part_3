@@ -2,28 +2,17 @@ html, body {
     height: 100%;
 }
 
-
 body {
     background: url(../img/background_main.png) repeat;
 }
 
 img {
     max-width: 100%;
-}
-
-
-.navbar-brand {
-    padding: 0px;
-}
-
-.navbar-brand > img{
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0px auto;
 }
 
 #first-container {
-    background: url(../img/stage.jpg) no-repeat;
+    background: url(../img/stage.jpg) center top no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -45,26 +34,31 @@ img {
     font-weight: bold;
 }
 
-.container_feature {
-    padding: 7rem 0px;
-    overflow: hidden;
+.darker_background {
+    background: #024752;
     color: white;
 }
 
-.side-padding {
-    padding: 0px 1rem;
+.text_center {
+    margin: 2rem 0;
+    text-align: center;
 }
 
-.margin_2rem {
-    margin: 2rem;
+.max-width-60 {
+    margin: 0 auto;
+    max-width: 60rem;
 }
 
-#third-container{
-    background: #024752;
+.slider_background_left {
+    background: linear-gradient(to right, rgba(2,71,82,0.9) , rgba(0,0,0,0.01));
 }
 
-.item img {
-    margin: 0px auto;
+.slider_background_right {
+    background: linear-gradient(to right, rgba(0,0,0,0.01) , rgba(2,71,82,0.9));
+}
+
+.wraper {
+    padding: 5rem 0rem;
 }
 
 footer {
@@ -83,34 +77,24 @@ footer a {
     border-radius: 4px;
 }
 
-.max-width-980 {
-    max-width: 980px;
-    margin: 0px auto;
+h6 {
+    font-weight: bold;
+    font-size: 0.6rem;
+    text-transform: uppercase;
 }
 
-.text_center {
-    font-size: 3rem;
-    text-align: center;
+.vertical_center {
+    display: flex;
+    align-items: center; 
 }
 
-#fifth-container {
-    max-width: 1200px;
-}
-
-#links {
-    max-width: 1200px;
-    margin: 0px auto;
-}
-
-@media only screen and (min-width: 1200px) {
-    #second-container {
-        padding-top: 30px;
-    } 
-}
-
-@media only screen and (max-width: 1199px) {
-    .outside_link {
-        float:left !important;
-        width: 12.5rem !important;
+@media only screen and (min-width: 992px) {
+    .height_restriction {
+        max-height: 35rem;
+        overflow: hidden;
+    }
+    
+    .height_restriction img{
+        margin-bottom: -5rem;
     }
 }
